@@ -100,7 +100,8 @@ After the selection of the required variables, the original variable names, obta
      variable (eg.-mean), to allow easier reading of the column names in the data set, and more detailed names (eg.-tBodyAcc_X_mean). 
     
 ```
-*List of the 68 variables* -
+List of the 68 variables :-
+
  [1]  Subject                 (integer)             
  [2]  Activity                (factor, 6 levels : "WALKING","WALKING_UPSTAIRS","wALKING_DOWNSTAIRS","SITTING","STANDING","LAYING")           
  [3]  tBodyAcc_X_mean         (numeric)     
@@ -179,7 +180,7 @@ A tidy data set was obtained in the **wide** format, which confirmed to the gene
   The data set conforms to the following 'tidy data' principles :-
     1. Each variable measured is in one column.
     2. Each different observation of each variable is in a different row.
-    3. There is a single table for each kind of variable.
+    3. There is a single table for each kind of data.
 ```
   
 The tidy data set obtained, has -
