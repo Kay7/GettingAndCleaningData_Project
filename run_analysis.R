@@ -33,8 +33,10 @@ names(ordered_data)<-c("Subject","Activity",
                        "tBodyAcc_X_mean","tBodyAcc_Y_mean","tBodyAcc_Z_mean","tGravityAcc_X_mean","tGravityAcc_Y_mean","tGravityAcc_Z_mean","tBodyAccJerk_X_mean","tBodyAccJerk_Y_mean","tBodyAccJerk_Z_mean","tBodyGyro_X_mean","tBodyGyro_Y_mean","tBodyGyro_Z_mean","tBodyGyroJerk_X_mean","tBodyGyroJerk_Y_mean","tBodyGyroJerk_Z_mean","tBodyAccMag_mean","tGravityAccMag_mean","tBodyAccJerkMag_mean","tBodyGyroMag_mean","tBodyGyroJerkMag_mean","fBodyAcc_X_mean","fBodyAcc_Y_mean","fBodyAcc_Z_mean","fBodyAccJerk_X_mean","fBodyAccJerk_Y_mean","fBodyAccJerk_Z_mean","fBodyGyro_X_mean","fBodyGyro_Y_mean","fBodyGyro_Z_mean","fBodyAccMag_mean","fBodyAccJerkMag_mean","fBodyGyroMag_mean","fBodyGyroJerkMag_mean",
                        "tBodyAcc_X_std" ,"tBodyAcc_Y_std" ,"tBodyAcc_Z_std" ,"tGravityAcc_X_std" ,"tGravityAcc_Y_std" ,"tGravityAcc_Z_std" ,"tBodyAccJerk_X_std" ,"tBodyAccJerk_Y_std" ,"tBodyAccJerk_Z_std" ,"tBodyGyro_X_std" ,"tBodyGyro_Y_std" ,"tBodyGyro_Z_std" ,"tBodyGyroJerk_X_std" ,"tBodyGyroJerk_Y_std" ,"tBodyGyroJerk_Z_std" ,"tBodyAccMag_std" ,"tGravityAccMag_std" ,"tBodyAccJerkMag_std" ,"tBodyGyroMag_std" ,"tBodyGyroJerkMag_std" ,"fBodyAcc_X_std" ,"fBodyAcc_Y_std" ,"fBodyAcc_Z_std" ,"fBodyAccJerk_X_std" ,"fBodyAccJerk_Y_std" ,"fBodyAccJerk_Z_std" ,"fBodyGyro_X_std" ,"fBodyGyro_Y_std" ,"fBodyGyro_Z_std" ,"fBodyAccMag_std" ,"fBodyAccJerkMag_std" ,"fBodyGyroMag_std" ,"fBodyGyroJerkMag_std")
 
+
 # tidying the data and calculating the average of each variable column for each activity and each subject
 final_data<-summarise_each(group_by(ordered_data, Subject, Activity), funs(mean))
+
 
 # writing the tidy final data to a .txt file
 write.table(final_data, "tidy_data.txt", row.name=FALSE)
