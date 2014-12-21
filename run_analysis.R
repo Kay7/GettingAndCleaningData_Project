@@ -36,4 +36,6 @@ names(ordered_data)<-c("Subject","Activity",
 # tidying the data and calculating the average of each variable column for each activity and each subject
 final_data<-summarise_each(group_by(ordered_data, Subject, Activity), funs(mean))
 
+# writing the tidy final data to a .txt file
 write.table(final_data, "tidy_data.txt", row.name=FALSE)
+
