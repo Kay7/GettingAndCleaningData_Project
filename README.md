@@ -1,7 +1,5 @@
 # Getting and Cleaning Data
-
 #### Johns Hopkins University
-
 
 
 ## Course Project
@@ -24,8 +22,11 @@ The data set used in the project :- [UCI Human Activity Recognition](https://d39
 - *'run_analysis.R'* - Code script performing the required analysis for the project
 - *'tidy_data.txt'*  - Tidy data, in the wide format, which is the output for the project code script
 
+
 ##### **Code Script :-**
+
 ###### Name - *"run_analysis.R"*
+
 ###### Description -
 >  - Reads the data sets from the  working directory.
    - Combines the training and the test data sets to create one data set.
@@ -68,6 +69,7 @@ The data set used in the project :- [UCI Human Activity Recognition](https://d39
       is calculated, and collected into a new, independent tidy data set
 >  7.  The tidy data set obtained is written to a .txt file, using 'write.table()', with row.name=FALSE, as required in the project
                  
+
 ###### Characteristics -
 >  * Wide format of the tidy data is chosen, and written to a text file, using 'write.table()'
 >  * Columns -
@@ -76,6 +78,7 @@ The data set used in the project :- [UCI Human Activity Recognition](https://d39
     - Column 3-35  - Average values for the measurement of *mean* for each feature variable
     - Column 36-68 - Average values for the measurement of *standard deviation* for each feature variable
 >  * Rows - 180 observations, where each subject performed each of the 6 activities (30X6)
+
 
 
 ##### Acknowledgements :- 
